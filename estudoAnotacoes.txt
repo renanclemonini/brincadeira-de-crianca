@@ -1,0 +1,37 @@
+Redes neurais:
+
+tinyFaceDetector => vai ser utilizada para detectar rostos no video e desenhar o quadrado em cima do rosto;
+
+faceLandmark68Net => vai tracejar onde houver olhos, boca, nariz e sobrancelhas;
+
+faceRecognitionNet => irá fazer o reconhecimento do rosto verificando se conhece ou não;
+
+faceExpressionNet => detectar expressões do rosto se esta feliz, com raiva, surpreso etc;
+
+ageGenderNet => detectar idade e genero, vai chutar na verdade;
+
+ssdMobilenetv1 => usada internamente para detectar e desenhar o rosto colocando o quadrado em volta;
+
+------------------------
+
+Fazer uma pasta com imagens
+
+const loadLabels = () => {
+	const labels = ['Renan Clemonini'] (nome da pasta, quando adicionar mais é só colocar virgula e outro nome de pasta)
+	labels.map(async label => {
+		for (let i = 1; i <= 5; i++) {
+			const img = await faceapi.fetchImage(`/assets/lib/face-api/labels/${label}/${i}.jpg`) [mesma extensão de arquivo]
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
